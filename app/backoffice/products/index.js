@@ -12,12 +12,12 @@ db.once("open", function () {
 
 // * Body Parser
 app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({extended: true}));
+app.use(bodyParser.urlencoded({ extended: true }));
 
-app.get("/",(req, res) => {
-    res.send("Route not found");
+app.get("/", (req, res) => {
+  res.send("Route not found");
 });
 
 let PORT = process.env.PORT || 3000;
 
-app.listen(PORT, () => console.log(`Server is running on PORT ${PORT}`))
+app.listen(PORT, () => console.log(`Server is running on PORT ${PORT}`));
