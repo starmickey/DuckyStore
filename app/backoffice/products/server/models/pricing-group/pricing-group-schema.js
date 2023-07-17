@@ -12,10 +12,11 @@ const pricingGroupSchema = new mongoose.Schema(
             type: schemaType.TypeDate,
             default: null
         },
-        state: {
-            type: schemaType.ObjectID,
-            ref: "pricing-states"
-        }
+        status: {
+            type: schemaType.TypeString,
+            enum: ['ACTIVE','DEACTIVATED'],
+            default: 'ACTIVE'
+        },
     },
     { timestamps: true }
 );

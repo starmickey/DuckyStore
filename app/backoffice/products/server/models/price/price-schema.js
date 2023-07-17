@@ -2,7 +2,7 @@ const mongoose = require("mongoose");
 const schemaType = require("../../types")
 
 
-const pricingDetailSchema = new mongoose.Schema(
+const priceSchema = new mongoose.Schema(
     {
         price: {
             type: schemaType.TypeNumber,
@@ -10,15 +10,15 @@ const pricingDetailSchema = new mongoose.Schema(
         },
         product: {
             type: schemaType.ObjectID,
-            ref: "products"
+            ref: "product"
         },
-        pricingType: {
+        pricingGroup: {
             type: schemaType.ObjectID,
-            ref: "pricing-groups"
+            ref: "pricing-group"
         }
     },
     { timestamps: true }
 );
 
 
-module.exports = pricingDetailSchema;
+module.exports = priceSchema;
