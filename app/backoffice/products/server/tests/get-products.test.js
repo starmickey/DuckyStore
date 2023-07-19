@@ -1,6 +1,6 @@
 const mongoose = require("mongoose");
 const request = require("supertest");
-const app = require("../app.js")
+const app = require("../app.js");
 
 require("dotenv").config();
 
@@ -13,7 +13,7 @@ describe("GET /products/catalog", () => {
     it("should return all products", async () => {
       const res = await request(app).get("/products/catalog");
       expect(res.statusCode).toBe(200);
-      expect(res._body).toBeDefined();
+      expect(res._body.response).toBeDefined();
     });
   });
 
