@@ -2,24 +2,24 @@
   background-color: #FBE3BE;
 }
 
-.App-section-title {
+.App-big-header {
   color: #F54F35;
   font-family: 'Abril Fatface', cursive;
   text-transform: uppercase;
   font-size: 2rem
 }
-
+/* 
 .SquaredProductCard {
   margin-top: 1rem;
   margin-bottom: 1rem;
-  width: 15rem;
+  width: 12rem;
 }
 
 .SquaredProductCard-img {
-  height: 10rem;
-  width: 15rem;
+  height: 8rem;
+  width: 12rem;
   object-fit: cover;
-}
+} */
 /* 
 .App-logo {
   height: 40vmin;
